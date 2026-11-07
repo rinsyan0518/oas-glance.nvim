@@ -52,9 +52,7 @@ OasGlanceTitle bold=true cterm={ bold = true } fg=#e0e2ea
 OasGlanceType fg=#e0e2ea
 # screen cells
 0:0-10 background=#2c2e33 foreground=#c4c6cd
-0:11-11 bold=true
-0:12-12 bold=true foreground=#e0e2ea
-0:13-34 bold=true
+0:11-34 background=#14161b bold=true foreground=#e0e2ea
 0:35-79 background=#2c2e33 foreground=#c4c6cd
 1:1-11 bold=true foreground=#e0e2ea
 1:36-36 background=#14161b foreground=#e0e2ea

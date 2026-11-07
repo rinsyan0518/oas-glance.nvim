@@ -23,9 +23,7 @@ OasGlanceHint fg=#9b9ea4
 OasGlanceSection bold=true cterm={ bold = true } fg=#e0e2ea
 # screen cells
 0:0-10 background=#2c2e33 foreground=#c4c6cd
-0:11-11 bold=true
-0:12-12 bold=true foreground=#e0e2ea
-0:13-40 bold=true
+0:11-40 background=#14161b bold=true foreground=#e0e2ea
 0:41-79 background=#2c2e33 foreground=#c4c6cd
 1:0-0 background=#2c2e33
 1:1-14 background=#2c2e33 bold=true foreground=#e0e2ea

@@ -28,8 +28,11 @@ end
 
 T["boot"] = MiniTest.new_set()
 
-T["boot"]["pins TabLineSel to the 0.12 default"] = function()
-  expect.equality(child.api.nvim_get_hl(0, { name = "TabLineSel", link = false }), { bold = true })
+T["boot"]["pins TabLineSel to the nightly default"] = function()
+  expect.equality(
+    child.api.nvim_get_hl(0, { name = "TabLineSel", link = false }),
+    { bold = true, fg = 14738154, bg = 1316379, cterm = { nocombine = true } }
+  )
 end
 
 T["highlight_groups"] = MiniTest.new_set()

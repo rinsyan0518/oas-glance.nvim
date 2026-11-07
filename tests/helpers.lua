@@ -229,8 +229,8 @@ function M.new_child()
   local child = MiniTest.new_child_neovim()
   child.boot = function()
     child.restart({ "-u", "scripts/minimal_init.lua" })
-    -- Pin the 0.12 default so references match across Neovim versions.
-    child.api.nvim_set_hl(0, "TabLineSel", { bold = true, cterm = {} })
+    -- Pin the nightly default so references match across Neovim versions.
+    child.api.nvim_set_hl(0, "TabLineSel", { bold = true, fg = "fg", bg = "bg", cterm = { nocombine = true } })
   end
   return child
 end
