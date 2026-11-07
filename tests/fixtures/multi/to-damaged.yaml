@@ -1,0 +1,12 @@
+openapi: 3.1.0
+info:
+  title: To damaged
+  version: 1.0.0
+paths: {}
+components:
+  schemas:
+    Holder:
+      type: object
+      properties:
+        ok:
+          $ref: ./damaged.yaml#/ok

@@ -1,0 +1,51 @@
+--|---------|---------|---------|---------|---------|---------|---------|---------|
+01| [No Name]  2 o//petstore-31.yaml:detail                                       X
+02| Petstore 1.0.0                     │DELETE /pets/{petId}  deprecated           
+03| OpenAPI 3.1.0                      │Delete a pet                               
+04|                                    │pets · deletePet                           
+05|                                    │                                           
+06|▾ pets 4                            │Parameters                                 
+07|   GET     /pets                    │  petId*  path  string                     
+08|   POST    /pets                    │    The id of the pet                      
+09|   GET     /pets/{petId}            │                                           
+10| ~ DELETE  /pets/{petId}            │Responses                                  
+11|▾ store 1                           │  204 Deleted                              
+12|   GET     /store/inventory         │                                           
+13|▾ (untagged) 1                      │                                           
+14|   GET     /health                  │                                           
+15|                                    │                                           
+16|▾ Webhooks 1                        │                                           
+17|   POST    newPet                   │                                           
+18|                                    │                                           
+19|▾ Schemas 3                         │                                           
+20|   Error                            │                                           
+21|   NewPet                           │                                           
+22|   Pet                              │                                           
+23| oas-glance list                      oas-glance detail                         
+24|                                                                                
+
+--|---------|---------|---------|---------|---------|---------|---------|---------|
+01|00000000000121111111111111111111111111111333333333333333333333333333333333333330
+02|45555555555555544444444444444444444467777777777777777777788999999999988888888888
+03|4:::::::::::::444444444444444444444464444444444444444444444444444444444444444444
+04|4444444444444444444444444444444444446::::::::::::::::444444444444444444444444444
+05|44444444444444444444444444444444444464444444444444444444444444444444444444444444
+06|;4<<<<4:444444444444444444444444444465555555555444444444444444444444444444444444
+07|444===44444>>>>>44444444444444444444644>>>>>?44::::44@@@@@@444444444444444444444
+08|444AAAA4444>>>>>4444444444444444444464444444444444444444444444444444444444444444
+09|444===44444>>>>>>;;;;;;;44444444444464444444444444444444444444444444444444444444
+10|898BBBBBB99CCCCCCDDDDDDD88888888888865555555554444444444444444444444444444444444
+11|;4<<<<<4:444444444444444444444444444644AAA44444444444444444444444444444444444444
+12|444===44444>>>>>>>>>>>>>>>>4444444446EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+13|;4<<<<<<<<<<4:44444444444444444444446EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+14|444===44444>>>>>>>4444444444444444446EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+15|4444444444444444444444444444444444446EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+16|;4<<<<<<<<4:4444444444444444444444446EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+17|444AAAA4444>>>>>>44444444444444444446EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+18|4444444444444444444444444444444444446EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+19|;4<<<<<<<4:44444444444444444444444446EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+20|444@@@@@44444444444444444444444444446EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+21|444@@@@@@4444444444444444444444444446EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+22|444@@@4444444444444444444444444444446EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+23|FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+24|HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH

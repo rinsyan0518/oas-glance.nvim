@@ -1,0 +1,149 @@
+# extmarks
+0:0 end_col=6 end_right_gravity=false end_row=0 hl_eol=false hl_group="OasGlanceTitle" namespace="oas-glance" priority=100 right_gravity=true
+0:8 end_col=14 end_right_gravity=false end_row=0 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+10:12 end_col=15 end_right_gravity=false end_row=10 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+10:2 end_col=10 end_right_gravity=false end_row=10 hl_eol=false hl_group="OasGlanceProperty" namespace="oas-glance" priority=100 right_gravity=true
+11:0 end_col=3 end_right_gravity=false end_row=11 hl_eol=false hl_group="OasGlanceFold" namespace="oas-glance" priority=100 right_gravity=true
+11:14 end_col=17 end_right_gravity=false end_row=11 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+11:4 end_col=10 end_right_gravity=false end_row=11 hl_eol=false hl_group="OasGlanceProperty" namespace="oas-glance" priority=100 right_gravity=true
+12:2 end_col=5 end_right_gravity=false end_row=12 hl_eol=false hl_group="OasGlanceFold" namespace="oas-glance" priority=100 right_gravity=true
+12:6 end_col=11 end_right_gravity=false end_row=12 hl_eol=false hl_group="OasGlanceComposition" namespace="oas-glance" priority=100 right_gravity=true
+13:6 end_col=12 end_right_gravity=false end_row=13 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+14:4 end_col=7 end_right_gravity=false end_row=14 hl_eol=false hl_group="OasGlanceFold" namespace="oas-glance" priority=100 right_gravity=true
+14:8 end_col=18 end_right_gravity=false end_row=14 hl_eol=false hl_group="OasGlanceRef" namespace="oas-glance" priority=100 right_gravity=true
+15:0 end_col=3 end_right_gravity=false end_row=15 hl_eol=false hl_group="OasGlanceFold" namespace="oas-glance" priority=100 right_gravity=true
+15:14 end_col=20 end_right_gravity=false end_row=15 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+15:4 end_col=10 end_right_gravity=false end_row=15 hl_eol=false hl_group="OasGlanceProperty" namespace="oas-glance" priority=100 right_gravity=true
+16:4 end_col=5 end_right_gravity=false end_row=16 hl_eol=false hl_group="OasGlanceProperty" namespace="oas-glance" priority=100 right_gravity=true
+16:7 end_col=14 end_right_gravity=false end_row=16 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+2:12 end_col=18 end_right_gravity=false end_row=2 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+2:18 end_col=20 end_right_gravity=false end_row=2 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+2:2 end_col=6 end_right_gravity=false end_row=2 hl_eol=false hl_group="OasGlanceProperty" namespace="oas-glance" priority=100 right_gravity=true
+2:22 end_col=32 end_right_gravity=false end_row=2 hl_eol=false hl_group="OasGlanceConstraint" namespace="oas-glance" priority=100 right_gravity=true
+2:34 end_col=40 end_right_gravity=false end_row=2 hl_eol=false hl_group="OasGlanceConstraint" namespace="oas-glance" priority=100 right_gravity=true
+3:0 end_col=3 end_right_gravity=false end_row=3 hl_eol=false hl_group="OasGlanceFold" namespace="oas-glance" priority=100 right_gravity=true
+3:14 end_col=24 end_right_gravity=false end_row=3 hl_eol=false hl_group="OasGlanceRef" namespace="oas-glance" priority=100 right_gravity=true
+3:24 end_col=26 end_right_gravity=false end_row=3 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+3:4 end_col=8 end_right_gravity=false end_row=3 hl_eol=false hl_group="OasGlanceProperty" namespace="oas-glance" priority=100 right_gravity=true
+4:0 end_col=3 end_right_gravity=false end_row=4 hl_eol=false hl_group="OasGlanceFold" namespace="oas-glance" priority=100 right_gravity=true
+4:14 end_col=20 end_right_gravity=false end_row=4 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+4:20 end_col=22 end_right_gravity=false end_row=4 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+4:4 end_col=8 end_right_gravity=false end_row=4 hl_eol=false hl_group="OasGlanceProperty" namespace="oas-glance" priority=100 right_gravity=true
+5:4 end_col=5 end_right_gravity=false end_row=5 hl_eol=false hl_group="OasGlanceProperty" namespace="oas-glance" priority=100 right_gravity=true
+5:7 end_col=13 end_right_gravity=false end_row=5 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+6:12 end_col=24 end_right_gravity=false end_row=6 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+6:2 end_col=8 end_right_gravity=false end_row=6 hl_eol=false hl_group="OasGlanceProperty" namespace="oas-glance" priority=100 right_gravity=true
+6:24 end_col=30 end_right_gravity=false end_row=6 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+6:30 end_col=31 end_right_gravity=false end_row=6 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+7:12 end_col=18 end_right_gravity=false end_row=7 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+7:2 end_col=8 end_right_gravity=false end_row=7 hl_eol=false hl_group="OasGlanceProperty" namespace="oas-glance" priority=100 right_gravity=true
+7:20 end_col=26 end_right_gravity=false end_row=7 hl_eol=false hl_group="OasGlanceConstraint" namespace="oas-glance" priority=100 right_gravity=true
+8:12 end_col=15 end_right_gravity=false end_row=8 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+8:2 end_col=9 end_right_gravity=false end_row=8 hl_eol=false hl_group="OasGlanceProperty" namespace="oas-glance" priority=100 right_gravity=true
+9:12 end_col=17 end_right_gravity=false end_row=9 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+9:2 end_col=8 end_right_gravity=false end_row=9 hl_eol=false hl_group="OasGlanceProperty" namespace="oas-glance" priority=100 right_gravity=true
+# highlights
+OasGlanceComposition bold=true cterm={ bold = true } fg=#e0e2ea
+OasGlanceConstraint fg=#9b9ea4
+OasGlanceFold ctermfg=14 fg=#8cf8f7
+OasGlanceProperty ctermfg=12 fg=#a6dbff
+OasGlanceRef cterm={ underline = true } underline=true
+OasGlanceTitle bold=true cterm={ bold = true } fg=#e0e2ea
+OasGlanceType fg=#e0e2ea
+# screen cells
+0:0-10 background=#2c2e33 foreground=#c4c6cd
+0:11-11 bold=true
+0:12-12 bold=true foreground=#e0e2ea
+0:13-34 bold=true
+0:35-79 background=#2c2e33 foreground=#c4c6cd
+1:1-11 bold=true foreground=#e0e2ea
+1:36-36 background=#14161b foreground=#e0e2ea
+1:37-42 background=#2c2e33 bold=true foreground=#e0e2ea
+1:43-44 background=#2c2e33
+1:45-50 background=#2c2e33 foreground=#e0e2ea
+1:51-79 background=#2c2e33
+2:1-13 foreground=#9b9ea4
+2:36-36 background=#14161b foreground=#e0e2ea
+3:36-36 background=#14161b foreground=#e0e2ea
+3:39-42 foreground=#a6dbff
+3:49-56 foreground=#e0e2ea
+3:59-68 foreground=#9b9ea4
+3:71-76 foreground=#9b9ea4
+4:36-36 background=#14161b foreground=#e0e2ea
+4:37-37 foreground=#8cf8f7
+4:39-42 foreground=#a6dbff
+4:49-56 underline=true
+4:57-58 foreground=#e0e2ea
+5:0-0 foreground=#8cf8f7
+5:2-8 foreground=#8cf8f7
+5:10-10 foreground=#9b9ea4
+5:36-36 background=#14161b foreground=#e0e2ea
+5:37-37 foreground=#8cf8f7
+5:39-42 foreground=#a6dbff
+5:49-56 foreground=#e0e2ea
+6:3-8 foreground=#e0e2ea
+6:36-36 background=#14161b foreground=#e0e2ea
+6:41-41 foreground=#a6dbff
+6:44-49 foreground=#e0e2ea
+7:0-2 background=#2c2e33
+7:3-8 background=#2c2e33 foreground=#e0e2ea
+7:9-35 background=#2c2e33
+7:36-36 background=#14161b foreground=#e0e2ea
+7:39-44 foreground=#a6dbff
+7:49-67 foreground=#e0e2ea
+8:0-35 foreground=#4f5258
+8:36-36 background=#14161b foreground=#e0e2ea
+8:39-44 foreground=#a6dbff
+8:49-54 foreground=#e0e2ea
+8:57-62 foreground=#9b9ea4
+9:0-35 foreground=#4f5258
+9:36-36 background=#14161b foreground=#e0e2ea
+9:39-45 foreground=#a6dbff
+9:49-51 foreground=#e0e2ea
+10:0-35 foreground=#4f5258
+10:36-36 background=#14161b foreground=#e0e2ea
+10:39-44 foreground=#a6dbff
+10:49-53 foreground=#e0e2ea
+11:0-35 foreground=#4f5258
+11:36-36 background=#14161b foreground=#e0e2ea
+11:39-46 foreground=#a6dbff
+11:49-51 foreground=#e0e2ea
+12:0-35 foreground=#4f5258
+12:36-36 background=#14161b foreground=#e0e2ea
+12:37-37 foreground=#8cf8f7
+12:39-44 foreground=#a6dbff
+12:49-51 foreground=#e0e2ea
+13:0-35 foreground=#4f5258
+13:36-36 background=#14161b foreground=#e0e2ea
+13:39-39 foreground=#8cf8f7
+13:41-45 bold=true foreground=#e0e2ea
+14:0-35 foreground=#4f5258
+14:36-36 background=#14161b foreground=#e0e2ea
+14:43-48 foreground=#e0e2ea
+15:0-35 foreground=#4f5258
+15:36-36 background=#14161b foreground=#e0e2ea
+15:41-41 foreground=#8cf8f7
+15:43-50 underline=true
+16:0-35 foreground=#4f5258
+16:36-36 background=#14161b foreground=#e0e2ea
+16:37-37 foreground=#8cf8f7
+16:39-44 foreground=#a6dbff
+16:49-54 foreground=#e0e2ea
+17:0-35 foreground=#4f5258
+17:36-36 background=#14161b foreground=#e0e2ea
+17:41-41 foreground=#a6dbff
+17:44-50 foreground=#e0e2ea
+18:0-35 foreground=#4f5258
+18:36-36 background=#14161b foreground=#e0e2ea
+18:37-79 foreground=#4f5258
+19:0-35 foreground=#4f5258
+19:36-36 background=#14161b foreground=#e0e2ea
+19:37-79 foreground=#4f5258
+20:0-35 foreground=#4f5258
+20:36-36 background=#14161b foreground=#e0e2ea
+20:37-79 foreground=#4f5258
+21:0-35 foreground=#4f5258
+21:36-36 background=#14161b foreground=#e0e2ea
+21:37-79 foreground=#4f5258
+22:0-36 background=#2c2e33 foreground=#c4c6cd
+22:37-79 background=#4f5258 foreground=#e0e2ea

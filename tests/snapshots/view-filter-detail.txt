@@ -1,0 +1,96 @@
+# extmarks
+0:0 end_col=14 end_right_gravity=false end_row=0 hl_eol=false hl_group="OasGlanceTitle" namespace="oas-glance" priority=100 right_gravity=true
+1:0 end_col=13 end_right_gravity=false end_row=1 hl_eol=false hl_group="OasGlanceMuted" namespace="oas-glance" priority=100 right_gravity=true
+1:13 end_col=31 end_right_gravity=false end_row=1 hl_eol=false hl_group="OasGlanceMuted" namespace="oas-glance" priority=100 right_gravity=true
+2:0 end_col=26 end_right_gravity=false end_row=2 hl_eol=false hl_group="OasGlanceMuted" namespace="oas-glance" priority=100 right_gravity=true
+4:0 end_col=19 end_right_gravity=false end_row=4 hl_eol=false hl_group="OasGlanceHint" namespace="oas-glance" priority=100 right_gravity=true
+5:0 end_col=35 end_right_gravity=false end_row=5 hl_eol=false hl_group="OasGlanceHint" namespace="oas-glance" priority=100 right_gravity=true
+# highlights
+OasGlanceHint fg=#9b9ea4
+OasGlanceMuted fg=#9b9ea4
+OasGlanceTitle bold=true cterm={ bold = true } fg=#e0e2ea
+# screen cells
+0:0-10 background=#2c2e33 foreground=#c4c6cd
+0:11-11 bold=true
+0:12-12 bold=true foreground=#e0e2ea
+0:13-40 bold=true
+0:41-79 background=#2c2e33 foreground=#c4c6cd
+1:0-0 background=#2c2e33
+1:1-26 background=#2c2e33 foreground=#8cf8f7
+1:27-35 background=#2c2e33
+1:36-36 background=#14161b foreground=#e0e2ea
+1:37-50 background=#2c2e33 bold=true foreground=#e0e2ea
+1:51-79 background=#2c2e33
+2:36-36 background=#14161b foreground=#e0e2ea
+2:37-67 foreground=#9b9ea4
+3:0-0 foreground=#8cf8f7
+3:2-4 background=#6b5300 foreground=#eef1f8
+3:5-5 foreground=#8cf8f7
+3:7-7 foreground=#9b9ea4
+3:36-36 background=#14161b foreground=#e0e2ea
+3:37-62 foreground=#9b9ea4
+4:3-5 foreground=#a6dbff
+4:11-15 background=#6b5300 foreground=#eef1f8
+4:36-36 background=#14161b foreground=#e0e2ea
+5:3-6 foreground=#b3f6c0
+5:11-15 background=#6b5300 foreground=#eef1f8
+5:36-36 background=#14161b foreground=#e0e2ea
+5:37-55 foreground=#9b9ea4
+6:3-5 foreground=#a6dbff
+6:11-15 background=#6b5300 foreground=#eef1f8
+6:16-16 foreground=#a6dbff
+6:17-23 foreground=#8cf8f7
+6:36-36 background=#14161b foreground=#e0e2ea
+6:37-71 foreground=#9b9ea4
+7:1-1 special=#ffc0b9 strikethrough=true
+7:3-8 foreground=#ffc0b9 special=#ffc0b9 strikethrough=true
+7:9-10 special=#ffc0b9 strikethrough=true
+7:11-15 background=#6b5300 foreground=#eef1f8 special=#ffc0b9 strikethrough=true
+7:16-16 foreground=#a6dbff special=#ffc0b9 strikethrough=true
+7:17-23 foreground=#8cf8f7 special=#ffc0b9 strikethrough=true
+7:36-36 background=#14161b foreground=#e0e2ea
+7:37-79 foreground=#4f5258
+8:0-35 foreground=#4f5258
+8:36-36 background=#14161b foreground=#e0e2ea
+8:37-79 foreground=#4f5258
+9:0-35 foreground=#4f5258
+9:36-36 background=#14161b foreground=#e0e2ea
+9:37-79 foreground=#4f5258
+10:0-35 foreground=#4f5258
+10:36-36 background=#14161b foreground=#e0e2ea
+10:37-79 foreground=#4f5258
+11:0-35 foreground=#4f5258
+11:36-36 background=#14161b foreground=#e0e2ea
+11:37-79 foreground=#4f5258
+12:0-35 foreground=#4f5258
+12:36-36 background=#14161b foreground=#e0e2ea
+12:37-79 foreground=#4f5258
+13:0-35 foreground=#4f5258
+13:36-36 background=#14161b foreground=#e0e2ea
+13:37-79 foreground=#4f5258
+14:0-35 foreground=#4f5258
+14:36-36 background=#14161b foreground=#e0e2ea
+14:37-79 foreground=#4f5258
+15:0-35 foreground=#4f5258
+15:36-36 background=#14161b foreground=#e0e2ea
+15:37-79 foreground=#4f5258
+16:0-35 foreground=#4f5258
+16:36-36 background=#14161b foreground=#e0e2ea
+16:37-79 foreground=#4f5258
+17:0-35 foreground=#4f5258
+17:36-36 background=#14161b foreground=#e0e2ea
+17:37-79 foreground=#4f5258
+18:0-35 foreground=#4f5258
+18:36-36 background=#14161b foreground=#e0e2ea
+18:37-79 foreground=#4f5258
+19:0-35 foreground=#4f5258
+19:36-36 background=#14161b foreground=#e0e2ea
+19:37-79 foreground=#4f5258
+20:0-35 foreground=#4f5258
+20:36-36 background=#14161b foreground=#e0e2ea
+20:37-79 foreground=#4f5258
+21:0-35 foreground=#4f5258
+21:36-36 background=#14161b foreground=#e0e2ea
+21:37-79 foreground=#4f5258
+22:0-36 background=#2c2e33 foreground=#c4c6cd
+22:37-79 background=#4f5258 foreground=#e0e2ea

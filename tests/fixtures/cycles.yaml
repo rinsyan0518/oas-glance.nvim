@@ -1,0 +1,50 @@
+openapi: 3.1.0
+info:
+  title: Cycles
+  version: 1.0.0
+paths: {}
+components:
+  schemas:
+    Node:
+      type: object
+      properties:
+        value:
+          type: string
+        next:
+          $ref: "#/components/schemas/Node"
+    A:
+      type: object
+      properties:
+        b:
+          $ref: "#/components/schemas/B"
+    B:
+      type: object
+      properties:
+        a:
+          $ref: "#/components/schemas/A"
+    LoopA:
+      $ref: "#/components/schemas/LoopB"
+    LoopB:
+      $ref: "#/components/schemas/LoopA"
+    UsesLoop:
+      type: object
+      properties:
+        loop:
+          $ref: "#/components/schemas/LoopA"
+    Missing:
+      type: object
+      properties:
+        gone:
+          $ref: "#/components/schemas/Nope"
+    Twice:
+      type: object
+      properties:
+        first:
+          $ref: "#/components/schemas/Leaf"
+        second:
+          $ref: "#/components/schemas/Leaf"
+    Leaf:
+      type: object
+      properties:
+        x:
+          type: string

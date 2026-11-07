@@ -1,0 +1,43 @@
+openapi: 3.1.0
+info:
+  title: Multi
+  version: 1.0.0
+tags:
+  - name: pets
+paths:
+  /pets:
+    $ref: ./paths/pets.yaml
+components:
+  schemas:
+    Pet:
+      type: object
+      description: A pet in the store
+      required: [id]
+      properties:
+        id:
+          type: integer
+        owner:
+          $ref: ./schemas/owner.yaml#/Owner
+        gone:
+          $ref: ./gone.yaml
+    Listed:
+      $ref: ./schemas/pet.yaml
+    Local:
+      type: object
+      properties:
+        pet:
+          $ref: "#/components/schemas/Pet"
+        missing:
+          $ref: "#/components/schemas/NoSuch"
+    Remote:
+      type: object
+      properties:
+        spec:
+          $ref: https://example.com/pet.yaml
+        name:
+          type: string
+    Outside:
+      type: object
+      properties:
+        far:
+          $ref: ../outside.yaml

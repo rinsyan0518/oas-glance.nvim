@@ -1,0 +1,27 @@
+openapi: 3.1.0
+info:
+  title: Statuses
+  version: 1.0.0
+paths:
+  /status:
+    get:
+      summary: Every status class
+      responses:
+        "100":
+          description: Continue
+        "200":
+          description: OK
+        2XX:
+          description: Any success
+        "301":
+          description: Moved
+        "404":
+          description: Not found
+        4XX:
+          description: Any client error
+        "500":
+          description: Server error
+        5XX:
+          description: Any server error
+        default:
+          description: Anything else

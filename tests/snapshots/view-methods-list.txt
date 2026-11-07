@@ -1,0 +1,134 @@
+# extmarks
+0:1 end_col=14 end_right_gravity=false end_row=0 hl_eol=false hl_group="OasGlanceTitle" namespace="oas-glance" priority=100 right_gravity=true
+10:11 end_col=18 end_right_gravity=false end_row=10 hl_eol=false hl_group="OasGlancePath" namespace="oas-glance" priority=100 right_gravity=true
+10:18 end_col=22 end_right_gravity=false end_row=10 hl_eol=false hl_group="OasGlancePathParam" namespace="oas-glance" priority=100 right_gravity=true
+10:3 end_col=7 end_right_gravity=false end_row=10 hl_eol=false hl_group="OasGlanceMethodHead" namespace="oas-glance" priority=100 right_gravity=true
+11:11 end_col=18 end_right_gravity=false end_row=11 hl_eol=false hl_group="OasGlancePath" namespace="oas-glance" priority=100 right_gravity=true
+11:18 end_col=22 end_right_gravity=false end_row=11 hl_eol=false hl_group="OasGlancePathParam" namespace="oas-glance" priority=100 right_gravity=true
+11:3 end_col=10 end_right_gravity=false end_row=11 hl_eol=false hl_group="OasGlanceMethodOptions" namespace="oas-glance" priority=100 right_gravity=true
+12:11 end_col=18 end_right_gravity=false end_row=12 hl_eol=false hl_group="OasGlancePath" namespace="oas-glance" priority=100 right_gravity=true
+12:18 end_col=22 end_right_gravity=false end_row=12 hl_eol=false hl_group="OasGlancePathParam" namespace="oas-glance" priority=100 right_gravity=true
+12:3 end_col=8 end_right_gravity=false end_row=12 hl_eol=false hl_group="OasGlanceMethodTrace" namespace="oas-glance" priority=100 right_gravity=true
+1:1 end_col=14 end_right_gravity=false end_row=1 hl_eol=false hl_group="OasGlanceMuted" namespace="oas-glance" priority=100 right_gravity=true
+4:0 end_col=3 end_right_gravity=false end_row=4 hl_eol=false hl_group="OasGlanceFold" namespace="oas-glance" priority=100 right_gravity=true
+4:15 end_col=16 end_right_gravity=false end_row=4 hl_eol=false hl_group="OasGlanceMuted" namespace="oas-glance" priority=100 right_gravity=true
+4:4 end_col=14 end_right_gravity=false end_row=4 hl_eol=false hl_group="OasGlanceGroup" namespace="oas-glance" priority=100 right_gravity=true
+5:11 end_col=18 end_right_gravity=false end_row=5 hl_eol=false hl_group="OasGlancePath" namespace="oas-glance" priority=100 right_gravity=true
+5:18 end_col=22 end_right_gravity=false end_row=5 hl_eol=false hl_group="OasGlancePathParam" namespace="oas-glance" priority=100 right_gravity=true
+5:3 end_col=6 end_right_gravity=false end_row=5 hl_eol=false hl_group="OasGlanceMethodGet" namespace="oas-glance" priority=100 right_gravity=true
+6:11 end_col=18 end_right_gravity=false end_row=6 hl_eol=false hl_group="OasGlancePath" namespace="oas-glance" priority=100 right_gravity=true
+6:18 end_col=22 end_right_gravity=false end_row=6 hl_eol=false hl_group="OasGlancePathParam" namespace="oas-glance" priority=100 right_gravity=true
+6:3 end_col=7 end_right_gravity=false end_row=6 hl_eol=false hl_group="OasGlanceMethodPost" namespace="oas-glance" priority=100 right_gravity=true
+7:11 end_col=18 end_right_gravity=false end_row=7 hl_eol=false hl_group="OasGlancePath" namespace="oas-glance" priority=100 right_gravity=true
+7:18 end_col=22 end_right_gravity=false end_row=7 hl_eol=false hl_group="OasGlancePathParam" namespace="oas-glance" priority=100 right_gravity=true
+7:3 end_col=6 end_right_gravity=false end_row=7 hl_eol=false hl_group="OasGlanceMethodPut" namespace="oas-glance" priority=100 right_gravity=true
+8:11 end_col=18 end_right_gravity=false end_row=8 hl_eol=false hl_group="OasGlancePath" namespace="oas-glance" priority=100 right_gravity=true
+8:18 end_col=22 end_right_gravity=false end_row=8 hl_eol=false hl_group="OasGlancePathParam" namespace="oas-glance" priority=100 right_gravity=true
+8:3 end_col=8 end_right_gravity=false end_row=8 hl_eol=false hl_group="OasGlanceMethodPatch" namespace="oas-glance" priority=100 right_gravity=true
+9:11 end_col=18 end_right_gravity=false end_row=9 hl_eol=false hl_group="OasGlancePath" namespace="oas-glance" priority=100 right_gravity=true
+9:18 end_col=22 end_right_gravity=false end_row=9 hl_eol=false hl_group="OasGlancePathParam" namespace="oas-glance" priority=100 right_gravity=true
+9:3 end_col=9 end_right_gravity=false end_row=9 hl_eol=false hl_group="OasGlanceMethodDelete" namespace="oas-glance" priority=100 right_gravity=true
+# highlights
+OasGlanceFold ctermfg=14 fg=#8cf8f7
+OasGlanceGroup ctermfg=14 fg=#8cf8f7
+OasGlanceMethodDelete ctermfg=9 fg=#ffc0b9
+OasGlanceMethodGet ctermfg=12 fg=#a6dbff
+OasGlanceMethodHead fg=#9b9ea4
+OasGlanceMethodOptions fg=#9b9ea4
+OasGlanceMethodPatch ctermfg=14 fg=#8cf8f7
+OasGlanceMethodPost ctermfg=10 fg=#b3f6c0
+OasGlanceMethodPut ctermfg=11 fg=#fce094
+OasGlanceMethodTrace fg=#9b9ea4
+OasGlanceMuted fg=#9b9ea4
+OasGlancePath ctermfg=12 fg=#a6dbff
+OasGlancePathParam ctermfg=14 fg=#8cf8f7
+OasGlanceTitle bold=true cterm={ bold = true } fg=#e0e2ea
+# screen cells
+0:0-10 background=#2c2e33 foreground=#c4c6cd
+0:11-11 bold=true
+0:12-12 bold=true foreground=#e0e2ea
+0:13-29 bold=true
+0:30-79 background=#2c2e33 foreground=#c4c6cd
+1:0-0 background=#2c2e33
+1:1-13 background=#2c2e33 bold=true foreground=#e0e2ea
+1:14-35 background=#2c2e33
+1:36-36 background=#14161b foreground=#e0e2ea
+1:37-49 background=#2c2e33 bold=true foreground=#e0e2ea
+1:50-79 background=#2c2e33
+2:1-13 foreground=#9b9ea4
+2:36-36 background=#14161b foreground=#e0e2ea
+2:37-63 foreground=#9b9ea4
+3:36-36 background=#14161b foreground=#e0e2ea
+4:36-36 background=#14161b foreground=#e0e2ea
+4:37-55 foreground=#9b9ea4
+5:0-0 foreground=#8cf8f7
+5:2-11 foreground=#8cf8f7
+5:13-13 foreground=#9b9ea4
+5:36-36 background=#14161b foreground=#e0e2ea
+5:37-71 foreground=#9b9ea4
+6:3-5 foreground=#a6dbff
+6:11-17 foreground=#a6dbff
+6:18-21 foreground=#8cf8f7
+6:36-36 background=#14161b foreground=#e0e2ea
+6:37-79 foreground=#4f5258
+7:3-6 foreground=#b3f6c0
+7:11-17 foreground=#a6dbff
+7:18-21 foreground=#8cf8f7
+7:36-36 background=#14161b foreground=#e0e2ea
+7:37-79 foreground=#4f5258
+8:3-5 foreground=#fce094
+8:11-17 foreground=#a6dbff
+8:18-21 foreground=#8cf8f7
+8:36-36 background=#14161b foreground=#e0e2ea
+8:37-79 foreground=#4f5258
+9:3-7 foreground=#8cf8f7
+9:11-17 foreground=#a6dbff
+9:18-21 foreground=#8cf8f7
+9:36-36 background=#14161b foreground=#e0e2ea
+9:37-79 foreground=#4f5258
+10:3-8 foreground=#ffc0b9
+10:11-17 foreground=#a6dbff
+10:18-21 foreground=#8cf8f7
+10:36-36 background=#14161b foreground=#e0e2ea
+10:37-79 foreground=#4f5258
+11:3-6 foreground=#9b9ea4
+11:11-17 foreground=#a6dbff
+11:18-21 foreground=#8cf8f7
+11:36-36 background=#14161b foreground=#e0e2ea
+11:37-79 foreground=#4f5258
+12:3-9 foreground=#9b9ea4
+12:11-17 foreground=#a6dbff
+12:18-21 foreground=#8cf8f7
+12:36-36 background=#14161b foreground=#e0e2ea
+12:37-79 foreground=#4f5258
+13:3-7 foreground=#9b9ea4
+13:11-17 foreground=#a6dbff
+13:18-21 foreground=#8cf8f7
+13:36-36 background=#14161b foreground=#e0e2ea
+13:37-79 foreground=#4f5258
+14:0-35 foreground=#4f5258
+14:36-36 background=#14161b foreground=#e0e2ea
+14:37-79 foreground=#4f5258
+15:0-35 foreground=#4f5258
+15:36-36 background=#14161b foreground=#e0e2ea
+15:37-79 foreground=#4f5258
+16:0-35 foreground=#4f5258
+16:36-36 background=#14161b foreground=#e0e2ea
+16:37-79 foreground=#4f5258
+17:0-35 foreground=#4f5258
+17:36-36 background=#14161b foreground=#e0e2ea
+17:37-79 foreground=#4f5258
+18:0-35 foreground=#4f5258
+18:36-36 background=#14161b foreground=#e0e2ea
+18:37-79 foreground=#4f5258
+19:0-35 foreground=#4f5258
+19:36-36 background=#14161b foreground=#e0e2ea
+19:37-79 foreground=#4f5258
+20:0-35 foreground=#4f5258
+20:36-36 background=#14161b foreground=#e0e2ea
+20:37-79 foreground=#4f5258
+21:0-35 foreground=#4f5258
+21:36-36 background=#14161b foreground=#e0e2ea
+21:37-79 foreground=#4f5258
+22:0-36 background=#4f5258 foreground=#e0e2ea
+22:37-79 background=#2c2e33 foreground=#c4c6cd

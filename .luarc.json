@@ -1,0 +1,9 @@
+{
+  "runtime": { "version": "LuaJIT", "pathStrict": true, "path": ["lua/?.lua", "lua/?/init.lua"] },
+  "diagnostics": { "globals": ["MiniTest", "MiniDoc"] },
+  "workspace": {
+    "library": ["$VIMRUNTIME"],
+    "checkThirdParty": false,
+    "ignoreDir": ["/tmp", "/.hook-state"]
+  }
+}

@@ -1,0 +1,107 @@
+# extmarks
+0:0 end_col=3 end_right_gravity=false end_row=0 hl_eol=false hl_group="OasGlanceTitle" namespace="oas-glance" priority=100 right_gravity=true
+0:5 end_col=11 end_right_gravity=false end_row=0 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+1:0 end_col=18 end_right_gravity=false end_row=1 hl_eol=false hl_group="OasGlanceDescription" namespace="oas-glance" priority=100 right_gravity=true
+2:0 end_col=12 end_right_gravity=false end_row=2 hl_eol=false hl_group="OasGlanceMuted" namespace="oas-glance" priority=100 right_gravity=true
+4:2 end_col=4 end_right_gravity=false end_row=4 hl_eol=false hl_group="OasGlanceProperty" namespace="oas-glance" priority=100 right_gravity=true
+4:4 end_col=5 end_right_gravity=false end_row=4 hl_eol=false hl_group="OasGlanceRequired" namespace="oas-glance" priority=100 right_gravity=true
+4:9 end_col=16 end_right_gravity=false end_row=4 hl_eol=false hl_group="OasGlanceType" namespace="oas-glance" priority=100 right_gravity=true
+5:0 end_col=3 end_right_gravity=false end_row=5 hl_eol=false hl_group="OasGlanceFold" namespace="oas-glance" priority=100 right_gravity=true
+5:11 end_col=33 end_right_gravity=false end_row=5 hl_eol=false hl_group="OasGlanceRef" namespace="oas-glance" priority=100 right_gravity=true
+5:4 end_col=9 end_right_gravity=false end_row=5 hl_eol=false hl_group="OasGlanceProperty" namespace="oas-glance" priority=100 right_gravity=true
+6:0 end_col=3 end_right_gravity=false end_row=6 hl_eol=false hl_group="OasGlanceFold" namespace="oas-glance" priority=100 right_gravity=true
+6:11 end_col=31 end_right_gravity=false end_row=6 hl_eol=false hl_group="OasGlanceRef" namespace="oas-glance" priority=100 right_gravity=true
+6:4 end_col=8 end_right_gravity=false end_row=6 hl_eol=false hl_group="OasGlanceProperty" namespace="oas-glance" priority=100 right_gravity=true
+# highlights
+OasGlanceDescription 
+OasGlanceFold ctermfg=14 fg=#8cf8f7
+OasGlanceMuted fg=#9b9ea4
+OasGlanceProperty ctermfg=12 fg=#a6dbff
+OasGlanceRef cterm={ underline = true } underline=true
+OasGlanceRequired ctermfg=9 fg=#ffc0b9
+OasGlanceTitle bold=true cterm={ bold = true } fg=#e0e2ea
+OasGlanceType fg=#e0e2ea
+# screen cells
+0:0-10 background=#2c2e33 foreground=#c4c6cd
+0:11-11 bold=true
+0:12-12 bold=true foreground=#e0e2ea
+0:13-33 bold=true
+0:34-79 background=#2c2e33 foreground=#c4c6cd
+1:1-11 bold=true foreground=#e0e2ea
+1:36-36 background=#14161b foreground=#e0e2ea
+1:37-39 background=#2c2e33 bold=true foreground=#e0e2ea
+1:40-41 background=#2c2e33
+1:42-47 background=#2c2e33 foreground=#e0e2ea
+1:48-79 background=#2c2e33
+2:1-13 foreground=#9b9ea4
+2:36-36 background=#14161b foreground=#e0e2ea
+3:36-36 background=#14161b foreground=#e0e2ea
+3:37-48 foreground=#9b9ea4
+4:36-36 background=#14161b foreground=#e0e2ea
+5:0-0 foreground=#8cf8f7
+5:2-5 foreground=#8cf8f7
+5:7-7 foreground=#9b9ea4
+5:36-36 background=#14161b foreground=#e0e2ea
+5:39-40 foreground=#a6dbff
+5:41-41 foreground=#ffc0b9
+5:46-52 foreground=#e0e2ea
+6:3-5 foreground=#a6dbff
+6:11-15 foreground=#a6dbff
+6:36-36 background=#14161b foreground=#e0e2ea
+6:37-37 foreground=#8cf8f7
+6:39-43 foreground=#a6dbff
+6:46-65 underline=true
+7:3-6 foreground=#b3f6c0
+7:11-15 foreground=#a6dbff
+7:36-36 background=#14161b foreground=#e0e2ea
+7:37-37 foreground=#8cf8f7
+7:39-42 foreground=#a6dbff
+7:46-63 underline=true
+8:3-8 foreground=#ffc0b9
+8:11-15 foreground=#a6dbff
+8:36-36 background=#14161b foreground=#e0e2ea
+8:37-79 foreground=#4f5258
+9:36-36 background=#14161b foreground=#e0e2ea
+9:37-79 foreground=#4f5258
+10:0-0 foreground=#8cf8f7
+10:2-8 foreground=#8cf8f7
+10:10-10 foreground=#9b9ea4
+10:36-36 background=#14161b foreground=#e0e2ea
+10:37-79 foreground=#4f5258
+11:0-2 background=#2c2e33
+11:3-5 background=#2c2e33 foreground=#e0e2ea
+11:6-35 background=#2c2e33
+11:36-36 background=#14161b foreground=#e0e2ea
+11:37-79 foreground=#4f5258
+12:3-8 foreground=#e0e2ea
+12:36-36 background=#14161b foreground=#e0e2ea
+12:37-79 foreground=#4f5258
+13:3-7 foreground=#e0e2ea
+13:36-36 background=#14161b foreground=#e0e2ea
+13:37-79 foreground=#4f5258
+14:3-8 foreground=#e0e2ea
+14:36-36 background=#14161b foreground=#e0e2ea
+14:37-79 foreground=#4f5258
+15:3-9 foreground=#e0e2ea
+15:36-36 background=#14161b foreground=#e0e2ea
+15:37-79 foreground=#4f5258
+16:0-35 foreground=#4f5258
+16:36-36 background=#14161b foreground=#e0e2ea
+16:37-79 foreground=#4f5258
+17:0-35 foreground=#4f5258
+17:36-36 background=#14161b foreground=#e0e2ea
+17:37-79 foreground=#4f5258
+18:0-35 foreground=#4f5258
+18:36-36 background=#14161b foreground=#e0e2ea
+18:37-79 foreground=#4f5258
+19:0-35 foreground=#4f5258
+19:36-36 background=#14161b foreground=#e0e2ea
+19:37-79 foreground=#4f5258
+20:0-35 foreground=#4f5258
+20:36-36 background=#14161b foreground=#e0e2ea
+20:37-79 foreground=#4f5258
+21:0-35 foreground=#4f5258
+21:36-36 background=#14161b foreground=#e0e2ea
+21:37-79 foreground=#4f5258
+22:0-36 background=#2c2e33 foreground=#c4c6cd
+22:37-79 background=#4f5258 foreground=#e0e2ea

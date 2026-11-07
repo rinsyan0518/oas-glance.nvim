@@ -1,0 +1,38 @@
+openapi: 3.1.0
+info:
+  title: Methods
+  version: 1.0.0
+paths:
+  /items/{id}:
+    get:
+      responses:
+        "200":
+          description: Read
+    post:
+      responses:
+        "201":
+          description: Created
+    put:
+      responses:
+        "200":
+          description: Replaced
+    patch:
+      responses:
+        "200":
+          description: Changed
+    delete:
+      responses:
+        "204":
+          description: Deleted
+    head:
+      responses:
+        "200":
+          description: Headers
+    options:
+      responses:
+        "204":
+          description: Allowed
+    trace:
+      responses:
+        "200":
+          description: Echoed

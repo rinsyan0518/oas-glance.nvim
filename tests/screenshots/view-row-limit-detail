@@ -1,0 +1,51 @@
+--|---------|---------|---------|---------|---------|---------|---------|---------|
+01| [No Name]  2 o//petstore-31.yaml:detail                                       X
+02| Petstore 1.0.0                     │Pet  object                                
+03| OpenAPI 3.1.0                      │A pet in the store                         
+04|                                    │required: id, name                         
+05|                                    │                                           
+06|▾ pets 4                            │  id*       integer<int64>  ro             
+07|   GET     /pets                    │  name*     string  len 1..64              
+08|   POST    /pets                    │  status    "available" | "sold"           
+09|   GET     /pets/{petId}            │  weight    number  > 0, <= 100            
+10| ~ DELETE  /pets/{petId}            │  nickname  string | null                  
+11|▾ store 1                           │  tags      string[]  unique               
+12|   GET     /store/inventory         │  labels    map<string, string>            
+13|▾ (untagged) 1                      │▸ owner     → Owner (common.yaml)          
+14|   GET     /health                  │  parent    ↻ Pet  cycle                   
+15|                                    │  legacy    string  deprecated             
+16|▾ Webhooks 1                        │▸ gone      → gone (gone.yaml)             
+17|   POST    newPet                   │! stopped at 15 rows (max_detail_rows)     
+18|                                    │                                           
+19|▾ Schemas 3                         │                                           
+20|   Error                            │                                           
+21|   NewPet                           │                                           
+22|   Pet                              │                                           
+23| oas-glance list                      oas-glance detail                         
+24|                                                                                
+
+--|---------|---------|---------|---------|---------|---------|---------|---------|
+01|00000000000121111111111111111111111111111333333333333333333333333333333333333330
+02|45555555555555544444444444444444444465554477777744444444444444444444444444444444
+03|48888888888888444444444444444444444464444444444444444444444444444444444444444444
+04|44444444444444444444444444444444444468888888888888888884444444444444444444444444
+05|44444444444444444444444444444444444464444444444444444444444444444444444444444444
+06|94::::484444444444444444444444444444644;;<44444447777777888888844884444444444444
+07|444===44444;;;;;44444444444444444444644;;;;<444447777774488888888844444444444444
+08|444>>>>4444;;;;;44444444444444444444644;;;;;;4444????????????????????44444444444
+09|444===44444;;;;;;9999999444444444444644;;;;;;44447777774488888888888444444444444
+10|4@4AAAAAA@@BBBBBBCCCCCCC444444444444644;;;;;;;;447777774888888444444444444444444
+11|94:::::48444444444444444444444444444644;;;;4444447777777744888888444444444444444
+12|444===44444;;;;;;;;;;;;;;;;444444444644;;;;;;44447777777777777777777444444444444
+13|94::::::::::484444444444444444444444694;;;;;44444DDDDDDDDDDDDDDDDDDDDD4444444444
+14|444===44444;;;;;;;444444444444444444644;;;;;;4444EEEEEEEEEEEE4444444444444444444
+15|444444444444444444444444444444444444644;;;;;;444477777744@@@@@@@@@@4444444444444
+16|94::::::::48444444444444444444444444694;;;;444444DDDDDDDDDDDDDDDDDD4444444444444
+17|444>>>>4444;;;;;;44444444444444444446FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFGGGGG
+18|4444444444444444444444444444444444446HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+19|94:::::::4844444444444444444444444446HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+20|4447777744444444444444444444444444446HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+21|4447777774444444444444444444444444446HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+22|GGGIIIGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG6HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+23|JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+24|LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL

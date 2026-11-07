@@ -1,0 +1,87 @@
+openapi: 3.1.0
+info:
+  title: Types
+  version: 1.0.0
+paths: {}
+components:
+  schemas:
+    TypesA:
+      type: object
+      required: [id]
+      properties:
+        id:
+          type: integer
+          format: int64
+          readOnly: true
+        name:
+          type: string
+          minLength: 1
+          maxLength: 64
+        note:
+          type: [string, "null"]
+        color:
+          enum: [red, green, blue, cyan, pink, gray, teal]
+        kind:
+          const: x
+        ge:
+          type: integer
+          minimum: 0
+        gt:
+          type: number
+          exclusiveMinimum: 0
+          maximum: 100
+        lt:
+          type: number
+          exclusiveMaximum: 100
+        code:
+          type: string
+          pattern: ^a+$
+        flag:
+          type: boolean
+          default: false
+        token:
+          type: string
+          writeOnly: true
+        legacy:
+          type: string
+          deprecated: true
+    TypesB:
+      type: object
+      properties:
+        tags:
+          type: array
+          uniqueItems: true
+          minItems: 1
+          maxItems: 5
+          items:
+            type: string
+        pets:
+          type: array
+          items:
+            $ref: "#/components/schemas/TypesA"
+        rows:
+          type: array
+          items:
+            type: object
+            properties:
+              x:
+                type: string
+        labels:
+          type: object
+          additionalProperties:
+            type: string
+        strict:
+          type: object
+          additionalProperties: false
+        allowed: true
+        denied: false
+        anything: {}
+        either:
+          oneOf:
+            - type: string
+            - $ref: "#/components/schemas/TypesA"
+        inline:
+          type: object
+          properties:
+            y:
+              type: integer

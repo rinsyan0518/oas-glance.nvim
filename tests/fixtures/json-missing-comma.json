@@ -1,0 +1,10 @@
+{
+  "openapi": "3.1.0",
+  "info": { "title": "Missing comma", "version": "1.0.0" },
+  "paths": {}
+  "components": {
+    "schemas": {
+      "Pet": { "type": "object" }
+    }
+  }
+}

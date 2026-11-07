@@ -1,0 +1,86 @@
+# extmarks
+0:1 end_col=12 end_right_gravity=false end_row=0 hl_eol=false hl_group="OasGlanceTitle" namespace="oas-glance" priority=100 right_gravity=true
+1:1 end_col=14 end_right_gravity=false end_row=1 hl_eol=false hl_group="OasGlanceMuted" namespace="oas-glance" priority=100 right_gravity=true
+4:0 end_col=3 end_right_gravity=false end_row=4 hl_eol=false hl_group="OasGlanceFold" namespace="oas-glance" priority=100 right_gravity=true
+4:12 end_col=13 end_right_gravity=false end_row=4 hl_eol=false hl_group="OasGlanceMuted" namespace="oas-glance" priority=100 right_gravity=true
+4:4 end_col=11 end_right_gravity=false end_row=4 hl_eol=false hl_group="OasGlanceGroup" namespace="oas-glance" priority=100 right_gravity=true
+5:3 end_col=6 end_right_gravity=false end_row=5 hl_eol=false hl_group="OasGlanceSchemaName" namespace="oas-glance" priority=100 right_gravity=true
+6:3 end_col=8 end_right_gravity=false end_row=6 hl_eol=false hl_group="OasGlanceSchemaName" namespace="oas-glance" priority=100 right_gravity=true
+# highlights
+OasGlanceFold ctermfg=14 fg=#8cf8f7
+OasGlanceGroup ctermfg=14 fg=#8cf8f7
+OasGlanceMuted fg=#9b9ea4
+OasGlanceSchemaName fg=#e0e2ea
+OasGlanceTitle bold=true cterm={ bold = true } fg=#e0e2ea
+# screen cells
+0:0-10 background=#2c2e33 foreground=#c4c6cd
+0:11-11 bold=true
+0:12-12 bold=true foreground=#e0e2ea
+0:13-30 bold=true
+0:31-79 background=#2c2e33 foreground=#c4c6cd
+1:1-11 bold=true foreground=#e0e2ea
+1:36-36 background=#14161b foreground=#e0e2ea
+1:37-47 background=#2c2e33 bold=true foreground=#e0e2ea
+1:48-79 background=#2c2e33
+2:0-0 background=#2c2e33
+2:1-13 background=#2c2e33 foreground=#9b9ea4
+2:14-35 background=#2c2e33
+2:36-36 background=#14161b foreground=#e0e2ea
+2:37-64 foreground=#9b9ea4
+3:36-36 background=#14161b foreground=#e0e2ea
+4:36-36 background=#14161b foreground=#e0e2ea
+4:37-55 foreground=#9b9ea4
+5:0-0 foreground=#8cf8f7
+5:2-8 foreground=#8cf8f7
+5:10-10 foreground=#9b9ea4
+5:36-36 background=#14161b foreground=#e0e2ea
+5:37-71 foreground=#9b9ea4
+6:3-5 foreground=#e0e2ea
+6:36-36 background=#14161b foreground=#e0e2ea
+7:3-7 foreground=#e0e2ea
+7:36-36 background=#14161b foreground=#e0e2ea
+7:37-43 bold=true foreground=#e0e2ea
+8:0-35 foreground=#4f5258
+8:36-36 background=#14161b foreground=#e0e2ea
+8:39-79 foreground=#9b9ea4
+9:0-35 foreground=#4f5258
+9:36-36 background=#14161b foreground=#e0e2ea
+9:37-49 foreground=#9b9ea4
+10:0-35 foreground=#4f5258
+10:36-36 background=#14161b foreground=#e0e2ea
+10:37-79 foreground=#4f5258
+11:0-35 foreground=#4f5258
+11:36-36 background=#14161b foreground=#e0e2ea
+11:37-79 foreground=#4f5258
+12:0-35 foreground=#4f5258
+12:36-36 background=#14161b foreground=#e0e2ea
+12:37-79 foreground=#4f5258
+13:0-35 foreground=#4f5258
+13:36-36 background=#14161b foreground=#e0e2ea
+13:37-79 foreground=#4f5258
+14:0-35 foreground=#4f5258
+14:36-36 background=#14161b foreground=#e0e2ea
+14:37-79 foreground=#4f5258
+15:0-35 foreground=#4f5258
+15:36-36 background=#14161b foreground=#e0e2ea
+15:37-79 foreground=#4f5258
+16:0-35 foreground=#4f5258
+16:36-36 background=#14161b foreground=#e0e2ea
+16:37-79 foreground=#4f5258
+17:0-35 foreground=#4f5258
+17:36-36 background=#14161b foreground=#e0e2ea
+17:37-79 foreground=#4f5258
+18:0-35 foreground=#4f5258
+18:36-36 background=#14161b foreground=#e0e2ea
+18:37-79 foreground=#4f5258
+19:0-35 foreground=#4f5258
+19:36-36 background=#14161b foreground=#e0e2ea
+19:37-79 foreground=#4f5258
+20:0-35 foreground=#4f5258
+20:36-36 background=#14161b foreground=#e0e2ea
+20:37-79 foreground=#4f5258
+21:0-35 foreground=#4f5258
+21:36-36 background=#14161b foreground=#e0e2ea
+21:37-79 foreground=#4f5258
+22:0-36 background=#4f5258 foreground=#e0e2ea
+22:37-79 background=#2c2e33 foreground=#c4c6cd

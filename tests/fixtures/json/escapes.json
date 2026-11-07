@@ -1,0 +1,19 @@
+{
+  "quote \" key": "quote \" value",
+  "backslash \\ key": "backslash \\ value",
+  "slash \/ key": "slash \/ value",
+  "backspace \b key": "backspace \b value",
+  "form feed \f key": "form feed \f value",
+  "newline \n key": "newline \n value",
+  "return \r key": "return \r value",
+  "tab \t key": "tab \t value",
+  "ascii \u0041 key": "ascii \u0041 value",
+  "latin \u00e9 key": "latin \u00E9 value",
+  "kana \u3042 key": "kana \u3042 value",
+  "nul value": "a\u0000b",
+  "pair \uD83D\uDE00 key": "pair \uD83D\uDE00 value",
+  "lowest pair": "\uD800\uDC00",
+  "highest pair": "\uDBFF\uDFFF",
+  "not an escape": "\\n \\u0041",
+  "all": "\"\\\/\b\f\n\r\t\u0041\uD83D\uDE00"
+}

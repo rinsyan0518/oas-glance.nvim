@@ -1,0 +1,24 @@
+get:
+  tags: [pets]
+  summary: List pets
+  parameters:
+    - $ref: ../shared.yaml#/parameters/limit
+  responses:
+    "200":
+      $ref: ../shared.yaml#/responses/ok
+post:
+  tags: [pets]
+  summary: Add a pet
+  requestBody:
+    $ref: ../shared.yaml#/requestBodies/pet
+  responses:
+    "201":
+      description: Made
+delete:
+  tags: [pets]
+  summary: Remove a pet
+  parameters:
+    - $ref: ../gone.yaml#/parameters/id
+  responses:
+    "204":
+      description: Gone

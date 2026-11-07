@@ -1,0 +1,47 @@
+openapi: 3.1.0
+info:
+  title: Broken
+  version: 1.0.0
+tags: not-a-list
+servers: not-a-list
+paths:
+  /good:
+    get:
+      summary: Still fine
+      responses:
+        "200":
+          description: Fine
+  /scalar-item: 5
+  /scalar-operation:
+    get: just text
+    post:
+      summary: Still fine too
+      tags: not-a-list
+      responses:
+        "200":
+          description: Fine
+  /bad-parts:
+    get:
+      summary: Parts are broken
+      parameters:
+        - 5
+        - name: fine
+          in: query
+          schema: 12
+      requestBody: 5
+      responses:
+        "200": 5
+        "201":
+          description: Made
+          content:
+            text/plain: 5
+          headers:
+            X-Bad: 5
+  /bad-lists:
+    get:
+      parameters: not-a-list
+      security: not-a-list
+      responses: [not, a, map]
+webhooks: [not, a, map]
+components:
+  schemas: [not, a, map]

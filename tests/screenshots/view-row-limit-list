@@ -1,0 +1,51 @@
+--|---------|---------|---------|---------|---------|---------|---------|---------|
+01| [No Name]  2 o//petstore-31.yaml                                              X
+02| Petstore 1.0.0                     │Pet  object                                
+03| OpenAPI 3.1.0                      │A pet in the store                         
+04|                                    │required: id, name                         
+05|                                    │                                           
+06|▾ pets 4                            │  id*       integer<int64>  ro             
+07|   GET     /pets                    │  name*     string  len 1..64              
+08|   POST    /pets                    │  status    "available" | "sold"           
+09|   GET     /pets/{petId}            │  weight    number  > 0, <= 100            
+10| ~ DELETE  /pets/{petId}            │  nickname  string | null                  
+11|▾ store 1                           │  tags      string[]  unique               
+12|   GET     /store/inventory         │  labels    map<string, string>            
+13|▾ (untagged) 1                      │▸ owner     → Owner (common.yaml)          
+14|   GET     /health                  │  parent    ↻ Pet  cycle                   
+15|                                    │  legacy    string  deprecated             
+16|▾ Webhooks 1                        │▸ gone      → gone (gone.yaml)             
+17|   POST    newPet                   │! stopped at 15 rows (max_detail_rows)     
+18|                                    │                                           
+19|▾ Schemas 3                         │                                           
+20|   Error                            │                                           
+21|   NewPet                           │                                           
+22|   Pet                              │                                           
+23| oas-glance list                      oas-glance detail                         
+24|                                                                                
+
+--|---------|---------|---------|---------|---------|---------|---------|---------|
+01|00000000000121111111111111111111110000000000000000000000000000000000000000000000
+02|32222222222222233333333333333333333342223355555533333333333333333333333333333333
+03|36666666666666333333333333333333333347777777777777777773333333333333333333333333
+04|33333333333333333333333333333333333346666666666666666663333333333333333333333333
+05|33333333333333333333333333333333333343333333333333333333333333333333333333333333
+06|83888836333333333333333333333333333343399:33333335555555666666633663333333333333
+07|3339993333399999333333333333333333334339999:333335555553366666666633333333333333
+08|333;;;;333399999333333333333333333334339999993333;;;;;;;;;;;;;;;;;;;;33333333333
+09|33399933333999999888888833333333333343399999933335555553366666666666333333333333
+10|3<3======<<>>>>>>???????33333333333343399999999335555553666666333333333333333333
+11|83888883633333333333333333333333333343399993333335555555533666666333333333333333
+12|33399933333999999999999999933333333343399999933335555555555555555555333333333333
+13|8388888888883633333333333333333333334839999933333@@@@@@@@@@@@@@@@@@@@@3333333333
+14|3339993333399999993333333333333333334339999993333AAAAAAAAAAAA3333333333333333333
+15|333333333333333333333333333333333333433999999333355555533<<<<<<<<<<3333333333333
+16|8388888888363333333333333333333333334839999333333@@@@@@@@@@@@@@@@@@3333333333333
+17|333;;;;333399999933333333333333333334BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBCCCCC
+18|3333333333333333333333333333333333334DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+19|8388888883633333333333333333333333334DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+20|3335555533333333333333333333333333334DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+21|3335555553333333333333333333333333334DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+22|CCCEEECCCCCCCCCCCCCCCCCCCCCCCCCCCCCC4DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+23|FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000000000000000000000000000000000
+24|GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG

@@ -1,0 +1,51 @@
+--|---------|---------|---------|---------|---------|---------|---------|---------|
+01| [No Name]  2 o//types.yaml:detail                                             X
+02| Types 1.0.0                        │TypesA  object                             
+03| OpenAPI 3.1.0                      │required: id                               
+04|                                    │                                           
+05|                                    │  id*     integer<int64>  ro               
+06|▾ Schemas 2                         │  name    string  len 1..64                
+07|   TypesA                           │  note    string | null                    
+08|   TypesB                           │  color   "red" | "green" | "blue" |       
+09|                                    │  "cyan" | "pink" … +2                     
+10|                                    │  kind    const "x"                        
+11|                                    │  ge      integer  >= 0                    
+12|                                    │  gt      number  > 0, <= 100              
+13|                                    │  lt      number  < 100                    
+14|                                    │  code    string  /^a+$/                   
+15|                                    │  flag    boolean = false                  
+16|                                    │  token   string  wo                       
+17|                                    │  legacy  string  deprecated               
+18|                                    │                                           
+19|                                    │                                           
+20|                                    │                                           
+21|                                    │                                           
+22|                                    │                                           
+23| oas-glance list                      oas-glance detail                         
+24|                                                                                
+
+--|---------|---------|---------|---------|---------|---------|---------|---------|
+01|00000000000121111111111111111111111333333333333333333333333333333333333333333330
+02|45555555555544444444444444444444444467777778899999988888888888888888888888888888
+03|4:::::::::::::44444444444444444444446::::::::::::4444444444444444444444444444444
+04|44444444444444444444444444444444444464444444444444444444444444444444444444444444
+05|444444444444444444444444444444444444644;;<44444=======:::::::44::444444444444444
+06|>4???????4:4444444444444444444444444644;;;;4444======44:::::::::4444444444444444
+07|888999999888888888888888888888888888644;;;;4444======4::::::44444444444444444444
+08|444======444444444444444444444444444644;;;;;444@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+09|AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6@@@@@@@@@@@@@@@@@@@@@@444444444444444444444
+10|AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA644;;;;4444@@@@@@@@@444444444444444444444444
+11|AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA644;;444444=======44::::44444444444444444444
+12|AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA644;;444444======44:::::::::::44444444444444
+13|AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA644;;444444======44:::::44444444444444444444
+14|AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA644;;;;4444======44::::::4444444444444444444
+15|AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA644;;;;4444=======4BBBBBBB444444444444444444
+16|AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA644;;;;;444======44::44444444444444444444444
+17|AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA644;;;;;;44======44CCCCCCCCCC444444444444444
+18|AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+19|AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+20|AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+21|AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+22|AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+23|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+24|FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF

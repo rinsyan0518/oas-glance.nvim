@@ -1,0 +1,51 @@
+--|---------|---------|---------|---------|---------|---------|---------|---------|
+01| [No Name]  2 o//petstore-31.yaml:detail                                       X
+02| Petstore 1.0.0                     │GET /pets/{petId}                          
+03| OpenAPI 3.1.0                      │Info for a specific pet                    
+04|                                    │pets · showPetById                         
+05|                                    │                                           
+06|▾ pets 4                            │Parameters                                 
+07|   GET     /pets                    │  petId*   path   string                   
+08|   POST    /pets                    │    The id of the pet                      
+09|   GET     /pets/{petId}            │  verbose  query  boolean = false          
+10| ~ DELETE  /pets/{petId}            │                                           
+11|▾ store 1                           │Responses                                  
+12|   GET     /store/inventory         │▾ 200 Expected response                    
+13|▾ (untagged) 1                      │  application/json                         
+14|   GET     /health                  │  ▸ → Pet                                  
+15|                                    │▸ default Unexpected error                 
+16|▾ Webhooks 1                        │                                           
+17|   POST    newPet                   │                                           
+18|                                    │                                           
+19|▾ Schemas 3                         │                                           
+20|   Error                            │                                           
+21|   NewPet                           │                                           
+22|   Pet                              │                                           
+23| oas-glance list                      oas-glance detail                         
+24|                                                                                
+
+--|---------|---------|---------|---------|---------|---------|---------|---------|
+01|00000000000121111111111111111111111111111333333333333333333333333333333333333330
+02|45555555555555544444444444444444444467777777777777777788888888888888888888888888
+03|49999999999999444444444444444444444464444444444444444444444444444444444444444444
+04|44444444444444444444444444444444444469999999999999999994444444444444444444444444
+05|44444444444444444444444444444444444464444444444444444444444444444444444444444444
+06|:4;;;;49444444444444444444444444444465555555555444444444444444444444444444444444
+07|444<<<44444=====44444444444444444444644=====>4449999444??????4444444444444444444
+08|444@@@@4444=====4444444444444444444464444444444444444444444444444444444444444444
+09|888AAA88888BBBBBBCCCCCCC888888888888644=======449999944???????4DDDDDDD4444444444
+10|4E4FFFFFFEEGGGGGGHHHHHHH44444444444464444444444444444444444444444444444444444444
+11|:4;;;;;4944444444444444444444444444465555555554444444444444444444444444444444444
+12|444<<<44444================4444444446:4@@@44444444444444444444444444444444444444
+13|:4;;;;;;;;;;49444444444444444444444464499999999999999994444444444444444444444444
+14|444<<<44444=======444444444444444444644:4IIIII4444444444444444444444444444444444
+15|4444444444444444444444444444444444446:499999994444444444444444444444444444444444
+16|:4;;;;;;;;494444444444444444444444446JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
+17|444@@@@4444======44444444444444444446JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
+18|4444444444444444444444444444444444446JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
+19|:4;;;;;;;4944444444444444444444444446JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
+20|444?????44444444444444444444444444446JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
+21|444??????4444444444444444444444444446JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
+22|444???4444444444444444444444444444446JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
+23|KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+24|MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM

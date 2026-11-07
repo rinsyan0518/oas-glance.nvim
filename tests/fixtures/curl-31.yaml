@@ -1,0 +1,604 @@
+openapi: 3.1.0
+info:
+  title: Curl
+  version: "1"
+servers:
+  - url: https://{region}.example.com/v1/
+    variables:
+      region:
+        default: eu
+paths:
+  /layout/get:
+    get:
+      operationId: layoutGet
+  /layout/no-id:
+    get: {}
+  /layout/post:
+    post:
+      operationId: layoutPost
+  /layout/head:
+    head:
+      operationId: layoutHead
+  /layout/lines:
+    get:
+      operationId: layoutLines
+      parameters:
+        - { name: X-A, in: header, required: true, example: a }
+        - { name: X-B, in: header, required: true, example: b }
+
+  /servers/operation:
+    servers:
+      - url: https://path.example.com
+    get:
+      operationId: serversOperation
+      servers:
+        - url: https://op.example.com
+  /servers/path-item:
+    servers:
+      - url: https://path.example.com
+    get:
+      operationId: serversPathItem
+  /servers/defaults:
+    get:
+      operationId: serversDefaults
+      servers:
+        - url: https://{host}:{port}/base
+          variables:
+            host: { default: api.example.com }
+            port: { default: "8443" }
+  /servers/no-default:
+    get:
+      operationId: serversNoDefault
+      servers:
+        - url: https://{tenant}.example.com
+          variables:
+            tenant: { enum: [a, b] }
+  /servers/undeclared:
+    get:
+      operationId: serversUndeclared
+      servers:
+        - url: https://{zone}.example.com
+  /servers/relative:
+    get:
+      operationId: serversRelative
+      servers:
+        - url: /api/v2
+  /servers/scheme-relative:
+    get:
+      operationId: serversSchemeRelative
+      servers:
+        - url: //host.example.com
+  /servers/trailing:
+    get:
+      operationId: serversTrailing
+      servers:
+        - url: https://slash.example.com//
+
+  /pets/{petId}:
+    get:
+      operationId: pathPlaceholder
+      parameters:
+        - { name: petId, in: path, required: true, schema: { type: string } }
+  /files/{name}:
+    get:
+      operationId: pathExample
+      parameters:
+        - { name: name, in: path, required: true, example: a b/c }
+  /label/{id}:
+    get:
+      operationId: pathLabel
+      parameters:
+        - { name: id, in: path, required: true, style: label, example: 5 }
+  /matrix/{id}:
+    get:
+      operationId: pathMatrix
+      parameters:
+        - { name: id, in: path, required: true, style: matrix, example: 5 }
+  /missing/{thing}:
+    get:
+      operationId: pathMissing
+
+  /query/required:
+    get:
+      operationId: queryRequired
+      parameters:
+        - { name: q, in: query, required: true, example: x }
+        - { name: opt, in: query, example: y }
+  /query/form-explode:
+    get:
+      operationId: queryFormExplode
+      parameters:
+        - { name: ids, in: query, required: true, example: [1, 2] }
+  /query/form-flat:
+    get:
+      operationId: queryFormFlat
+      parameters:
+        - { name: ids, in: query, required: true, explode: false, example: [1, 2] }
+  /query/delimited:
+    get:
+      operationId: queryDelimited
+      parameters:
+        - { name: a, in: query, required: true, style: spaceDelimited, example: [1, 2] }
+        - { name: b, in: query, required: true, style: pipeDelimited, example: [1, 2] }
+  /query/objects:
+    get:
+      operationId: queryObjects
+      parameters:
+        - { name: o1, in: query, required: true, example: { x: 1, y: 2 } }
+        - { name: o2, in: query, required: true, explode: false, example: { x: 1, y: 2 } }
+  /query/deep:
+    get:
+      operationId: queryDeep
+      parameters:
+        - { name: filter, in: query, required: true, style: deepObject, example: { color: red, size: 2 } }
+  /query/reserved:
+    get:
+      operationId: queryReserved
+      parameters:
+        - { name: r, in: query, required: true, allowReserved: true, example: a/b?c }
+        - { name: s, in: query, required: true, example: a/b }
+  /query/placeholder:
+    get:
+      operationId: queryPlaceholder
+      parameters:
+        - { name: q, in: query, required: true, schema: { type: string } }
+  /query/content:
+    get:
+      operationId: queryContent
+      parameters:
+        - name: filter
+          in: query
+          required: true
+          content:
+            application/json:
+              example: { a: 1 }
+
+  /headers:
+    get:
+      operationId: headers
+      parameters:
+        - { name: X-Request-Id, in: header, required: true, schema: { type: string } }
+        - { name: X-Opt, in: header, example: o }
+        - { name: X-Trace, in: header, required: true, example: t1 }
+  /cookies:
+    get:
+      operationId: cookies
+      parameters:
+        - { name: session, in: cookie, required: true, example: abc }
+        - { name: theme, in: cookie, example: dark }
+        - { name: lang, in: cookie, required: true }
+  /headers/skipped:
+    get:
+      operationId: headersSkipped
+      parameters:
+        - { name: Accept, in: header, required: true, example: text/plain }
+        - { name: content-type, in: header, required: true, example: text/plain }
+        - { name: AUTHORIZATION, in: header, required: true, example: none }
+        - { name: X-Keep, in: header, required: true, example: k }
+  /headers/duplicate:
+    get:
+      operationId: headersDuplicate
+      security:
+        - apiKeyHeader: []
+      parameters:
+        - { name: x-api-key, in: header, required: true, example: z }
+  /headers/quoting:
+    get:
+      operationId: headersQuoting
+      parameters:
+        - { name: X-Q, in: header, required: true, example: 'a$b"c`d\e' }
+
+  /auth/apikey:
+    get:
+      operationId: authApiKey
+      security:
+        - { apiKeyHeader: [], apiKeyQuery: [], apiKeyCookie: [] }
+      parameters:
+        - { name: q, in: query, required: true, example: 1 }
+  /auth/bearer:
+    get:
+      operationId: authBearer
+      security:
+        - bearerUpper: []
+  /auth/oauth:
+    get:
+      operationId: authOauth
+      security:
+        - { oauth: [read], oidc: [] }
+  /auth/basic:
+    get:
+      operationId: authBasic
+      security:
+        - basic: []
+  /auth/digest:
+    get:
+      operationId: authDigest
+      security:
+        - digest: []
+  /auth/mtls:
+    get:
+      operationId: authMtls
+      security:
+        - mtls: []
+  /auth/first-only:
+    get:
+      operationId: authFirstOnly
+      security:
+        - basic: []
+        - bearer: []
+  /auth/two:
+    get:
+      operationId: authTwo
+      security:
+        - { bearer: [], apiKeyHeader: [] }
+  /auth/missing:
+    get:
+      operationId: authMissing
+      security:
+        - { nope: [], bearer: [] }
+  /auth/ref:
+    get:
+      operationId: authRef
+      security:
+        - linked: []
+  /auth/two-bearer:
+    get:
+      operationId: authTwoBearer
+      security:
+        - { bearer: [], bearer2: [] }
+
+  /media/json-among:
+    post:
+      operationId: mediaJsonAmong
+      requestBody:
+        content:
+          text/plain: { example: hi }
+          application/json: { example: { a: 1 } }
+          application/xml: { example: <a/> }
+  /media/charset:
+    post:
+      operationId: mediaCharset
+      requestBody:
+        content:
+          text/plain: { example: hi }
+          "application/json; charset=utf-8": { example: { a: 1 } }
+  /media/vnd:
+    post:
+      operationId: mediaVnd
+      requestBody:
+        content:
+          text/plain: { example: hi }
+          application/vnd.x+json: { example: [1] }
+  /media/first:
+    post:
+      operationId: mediaFirst
+      requestBody:
+        content:
+          application/xml: { example: <a/> }
+          text/csv: { example: "a,b" }
+  /media/any:
+    post:
+      operationId: mediaAny
+      requestBody:
+        content:
+          "*/*": { schema: { type: string } }
+
+  /body/example:
+    post:
+      operationId: bodyExample
+      requestBody:
+        content:
+          application/json:
+            example: { name: Rex, tags: [a] }
+            schema: { $ref: "#/components/schemas/Pet" }
+  /body/examples:
+    post:
+      operationId: bodyExamples
+      requestBody:
+        content:
+          application/json:
+            examples:
+              gone: { $ref: "#/components/examples/Missing" }
+              far: { externalValue: https://example.com/body.json }
+              good: { value: { n: 1 } }
+  /body/schema:
+    post:
+      operationId: bodySchema
+      requestBody:
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/Pet" }
+  /body/cycle:
+    post:
+      operationId: bodyCycle
+      requestBody:
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/SelfRef" }
+  /body/scalar:
+    post:
+      operationId: bodyScalar
+      requestBody:
+        content:
+          application/json:
+            schema: { type: string }
+  /body/quote:
+    post:
+      operationId: bodyQuote
+      requestBody:
+        content:
+          application/json:
+            example: { name: "O'Brien" }
+  /body/get:
+    get:
+      operationId: bodyGet
+      requestBody:
+        content:
+          application/json:
+            example: { a: 1 }
+  /body/broken:
+    post:
+      operationId: bodyBroken
+      requestBody:
+        $ref: "#/components/requestBodies/Missing"
+  /body/none:
+    post:
+      operationId: bodyNone
+      requestBody:
+        content:
+          application/json: {}
+  /body/form:
+    post:
+      operationId: bodyForm
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                name: { type: string }
+                tags: { type: array, items: { type: string } }
+                meta: { type: object, properties: { a: { type: integer } } }
+  /body/form-scalar:
+    post:
+      operationId: bodyFormScalar
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            example: raw
+  /body/multipart:
+    post:
+      operationId: bodyMultipart
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                name: { type: string }
+                file: { type: string, format: binary }
+                avatar: { type: string, contentMediaType: image/png }
+  /body/multipart-literal:
+    post:
+      operationId: bodyMultipartLiteral
+      requestBody:
+        content:
+          multipart/form-data:
+            example:
+              at: "@/etc/passwd"
+              lt: "<notes.txt"
+              "k=@v": x
+              "k;type=text/html": y
+  /body/multipart-binary-key:
+    post:
+      operationId: bodyMultipartBinaryKey
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                name: { type: string }
+                "a=@.env;filename": { type: string, format: binary }
+  /body/multipart-media-key:
+    post:
+      operationId: bodyMultipartMediaKey
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                'doc"<x': { type: string, contentMediaType: image/png }
+  /body/text:
+    post:
+      operationId: bodyText
+      requestBody:
+        content:
+          text/plain:
+            example: hello world
+  /body/text-none:
+    post:
+      operationId: bodyTextNone
+      requestBody:
+        content:
+          text/plain:
+            schema: { type: object, properties: { a: { type: integer } } }
+  /body/octet:
+    post:
+      operationId: bodyOctet
+      requestBody:
+        content:
+          application/octet-stream:
+            schema: { type: string, format: binary }
+
+  /order/{id}:
+    post:
+      operationId: order
+      servers:
+        - url: "{base}/v1"
+      security:
+        - bearer: []
+      parameters:
+        - { name: id, in: path, required: true }
+        - { name: id, in: query, required: true }
+        - { name: id, in: header, required: true }
+        - { name: token, in: header, required: true }
+        - { name: id, in: cookie, required: true }
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                id: { type: string, format: binary }
+
+  /pets/{petId}/toys:
+    post:
+      operationId: createPet
+      servers:
+        - url: https://api.example.com/v1
+      security:
+        - bearer: []
+      parameters:
+        - { name: petId, in: path, required: true, schema: { type: string } }
+        - { name: limit, in: query, required: true, schema: { type: integer, default: 20 } }
+        - { name: X-Request-Id, in: header, required: true, schema: { type: string } }
+        - { name: session, in: cookie, required: true, schema: { type: string } }
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name: { type: string }
+                tags: { type: array, items: { type: string } }
+  /flag-order:
+    post:
+      operationId: flagOrder
+      security:
+        - basic: []
+      parameters:
+        - { name: X-A, in: header, required: true, example: a }
+        - { name: c, in: cookie, required: true, example: v }
+      requestBody:
+        content:
+          application/json:
+            example: { a: 1 }
+
+components:
+  securitySchemes:
+    apiKeyHeader: { type: apiKey, in: header, name: X-API-Key }
+    apiKeyQuery: { type: apiKey, in: query, name: api_key }
+    apiKeyCookie: { type: apiKey, in: cookie, name: key }
+    bearer: { type: http, scheme: bearer }
+    bearerUpper: { type: http, scheme: Bearer }
+    bearer2: { type: http, scheme: bearer }
+    basic: { type: http, scheme: basic }
+    digest: { type: http, scheme: Digest }
+    oauth: { type: oauth2, flows: {} }
+    oidc: { type: openIdConnect, openIdConnectUrl: "https://example.com/.well-known/openid-configuration" }
+    mtls: { type: mutualTLS }
+    linked: { $ref: "#/components/securitySchemes/basic" }
+  schemas:
+    Pet:
+      type: object
+      properties:
+        id: { type: integer, readOnly: true }
+        name: { type: string }
+        born: { type: string, format: date }
+    Precedence: { type: string, examples: [ex], default: def, enum: [en], const: co }
+    DefaultFirst: { type: string, default: def, enum: [en], const: co }
+    EnumFirst: { type: string, enum: [en, other], const: co }
+    ConstAlone: { type: string, const: co }
+    Formats:
+      type: object
+      properties:
+        dt: { type: string, format: date-time }
+        d: { type: string, format: date }
+        t: { type: string, format: time }
+        u: { type: string, format: uuid }
+        e: { type: string, format: email }
+        uri: { type: string, format: uri }
+        other: { type: string, format: hostname }
+    Scalars:
+      type: object
+      properties:
+        i: { type: integer }
+        n: { type: number }
+        b: { type: boolean }
+        z: { type: "null" }
+    ReadOnly:
+      type: object
+      properties:
+        id: { type: integer, readOnly: true }
+        name: { type: string }
+    AllOf:
+      type: object
+      properties:
+        own: { type: string }
+        shared: { type: string, default: own }
+      allOf:
+        - type: object
+          properties:
+            first: { type: integer }
+            shared: { type: string, default: member }
+        - type: object
+          properties:
+            second: { type: boolean }
+    AllOfScalar:
+      allOf:
+        - { type: string, format: date }
+        - { type: string }
+    OneOf:
+      properties:
+        own: { type: string }
+      oneOf:
+        - { type: object, properties: { a: { type: integer } } }
+        - { type: object, properties: { b: { type: integer } } }
+    AnyOf:
+      anyOf:
+        - { type: integer }
+        - { type: string }
+    NoType:
+      type: object
+      properties:
+        props: { properties: { a: { type: integer } } }
+        list: { items: { type: string } }
+        none: { description: Anything. }
+    Arrays:
+      type: object
+      properties:
+        prefix: { type: array, prefixItems: [{ type: integer }, { type: string }], items: { type: boolean } }
+        items: { type: array, items: { type: boolean } }
+        neither: { type: array }
+    Node:
+      type: object
+      properties:
+        name: { type: string }
+        next: { $ref: "#/components/schemas/Node" }
+    Tree:
+      type: array
+      items: { $ref: "#/components/schemas/Tree" }
+    SelfRef:
+      $ref: "#/components/schemas/SelfRef"
+      description: Refers to itself.
+    Deep:
+      type: object
+      properties:
+        a:
+          type: object
+          properties:
+            b:
+              type: object
+              properties:
+                c: { type: string }
+    Broken:
+      type: object
+      properties:
+        gone: { $ref: "#/components/schemas/Missing" }
+    Booleans:
+      type: object
+      properties:
+        allowed: true
+        denied: false

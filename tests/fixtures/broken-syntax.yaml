@@ -1,0 +1,17 @@
+openapi: 3.1.0
+info:
+  title: Broken syntax
+  version: 1.0.0
+paths:
+  /good:
+    get:
+      summary: Fine
+      responses:
+        "200":
+          description: OK
+  /missing:
+    $ref: ./gone.yaml
+  /bad:
+    get:
+      summary: [broken
+      description: After

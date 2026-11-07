@@ -1,0 +1,48 @@
+openapi: 3.0.3
+info:
+  title: Curl 3.0
+  version: "1"
+servers:
+  - url: https://api.example.com
+security:
+  - bearer: []
+paths:
+  /pets:
+    post:
+      operationId: createPet30
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Pet"
+  /inherited:
+    get:
+      operationId: inherited
+  /public:
+    get:
+      operationId: public
+      security: []
+  /empty-first:
+    get:
+      operationId: emptyFirst
+      security:
+        - {}
+        - bearer: []
+components:
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+  schemas:
+    Nullable:
+      type: string
+      nullable: true
+    Pet:
+      type: object
+      properties:
+        name:
+          type: string
+          nullable: true
+        size:
+          type: integer
+          example: 3

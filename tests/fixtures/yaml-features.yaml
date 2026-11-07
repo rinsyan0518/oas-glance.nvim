@@ -1,0 +1,54 @@
+# Anchors, aliases, merges, block scalars and multi-line scalars.
+base: &base
+  zeta: base zeta
+  alpha: base alpha
+  shared: from base
+other: &other
+  shared: from other
+  extra: from other
+single:
+  first: 1
+  <<: *base
+  alpha: explicit alpha
+  last: 2
+list:
+  <<: [*base, *other]
+inline:
+  <<: { inlined: yes }
+  own: 1
+items: &items
+  - one
+  - two
+same_items: *items
+early: &name first
+later: *name
+late_anchor: &name second
+latest: *name
+literal: |
+  line one
+    indented
+  line three
+folded: >
+  folded one
+  folded two
+
+  after blank
+keep: |+
+  kept
+
+strip: >-
+  stripped
+indicator: |2
+    two extra
+in_seq:
+  - |1
+     one extra
+plain_multi: first
+  second
+
+  third
+double_multi: "first
+  second\n
+  third"
+single_multi: 'it''s
+  folded'

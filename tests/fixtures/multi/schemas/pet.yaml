@@ -1,0 +1,6 @@
+type: object
+properties:
+  owner:
+    $ref: ./owner.yaml#/Owner
+  back:
+    $ref: ../root.yaml#/components/schemas/Pet

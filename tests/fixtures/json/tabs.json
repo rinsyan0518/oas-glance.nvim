@@ -1,0 +1,24 @@
+{
+	"name":	"tabs",
+	"object":	{
+		"inner":	{
+			"deep":	1,
+			"empty":	{
+			}
+		},
+		"list":	[
+			1,
+			"two",
+			[
+				null,
+				true
+			],
+			{
+				"k":	false
+			}
+		],
+		"none":	[
+		]
+	},
+	"last":	-1.5
+}

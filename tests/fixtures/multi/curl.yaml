@@ -1,0 +1,26 @@
+openapi: 3.1.0
+info:
+  title: Multi curl
+  version: "1"
+servers:
+  - url: https://api.example.com
+paths:
+  /pets:
+    post:
+      operationId: addPet
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: ./schemas/pet.yaml
+  /gone:
+    post:
+      operationId: addGone
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                gone:
+                  $ref: ./missing.yaml

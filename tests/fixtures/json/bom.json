@@ -1,0 +1,2 @@
+﻿{"openapi":"3.1.0","info":{"title":"BOM","version":"1.0.0"},"paths":{"/first":{"get":{"responses":{"200":{"description":"ok"}}}},
+"/later":{"get":{"responses":{"200":{"description":"ok"}}}}}}

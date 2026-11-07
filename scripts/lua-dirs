@@ -1,0 +1,12 @@
+lua
+plugin
+tests
+scripts
+after
+ftplugin
+ftdetect
+indent
+syntax
+colors
+compiler
+autoload

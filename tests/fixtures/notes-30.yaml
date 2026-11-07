@@ -1,0 +1,18 @@
+openapi: 3.0.3
+info:
+  title: Notes
+  version: 1.0.0
+paths: {}
+components:
+  schemas:
+    Pet:
+      type: object
+      properties:
+        owner:
+          $ref: "#/components/schemas/Owner"
+          description: Ignored in 3.0
+    Owner:
+      type: object
+      properties:
+        name:
+          type: string

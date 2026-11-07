@@ -1,0 +1,51 @@
+--|---------|---------|---------|---------|---------|---------|---------|---------|
+01| [No Name]  2 o//root.yaml:detail                                              X
+02| Multi 1.0.0                        │Remote  object                             
+03| OpenAPI 3.1.0                      │                                           
+04| ! 1 problem so far                 │  spec  ✗ https://example.com/pet.yaml     
+05|                                    │  remote not loaded                        
+06|▾ pets 3                            │  name  string                             
+07|   GET     /pets                    │                                           
+08|   POST    /pets                    │                                           
+09|   DELETE  /pets                    │                                           
+10|                                    │                                           
+11|▾ Schemas 5                         │                                           
+12|   Pet                              │                                           
+13|   Listed                           │                                           
+14|   Local                            │                                           
+15|   Remote                           │                                           
+16|   Outside                          │                                           
+17|                                    │                                           
+18|                                    │                                           
+19|                                    │                                           
+20|                                    │                                           
+21|                                    │                                           
+22|                                    │                                           
+23| oas-glance list                      oas-glance detail                         
+24|                                                                                
+
+--|---------|---------|---------|---------|---------|---------|---------|---------|
+01|00000000000121111111111111111111113333333333333333333333333333333333333333333330
+02|45555555555544444444444444444444444467777778899999988888888888888888888888888888
+03|4:::::::::::::444444444444444444444464444444444444444444444444444444444444444444
+04|4;;;;;;;;;;;;;;;;;;44444444444444444644<<<<44===================================
+05|4444444444444444444444444444444444446===================444444444444444444444444
+06|>4????4:4444444444444444444444444444644<<<<44@@@@@@44444444444444444444444444444
+07|444AAA44444<<<<<444444444444444444446BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+08|444CCCC4444<<<<<444444444444444444446BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+09|444======44<<<<<444444444444444444446BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+10|4444444444444444444444444444444444446BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+11|>4???????4:44444444444444444444444446BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+12|444@@@4444444444444444444444444444446BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+13|444@@@@@@4444444444444444444444444446BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+14|444@@@@@44444444444444444444444444446BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+15|8889999998888888888888888888888888886BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+16|444@@@@@@@444444444444444444444444446BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+17|BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB6BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+18|BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB6BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+19|BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB6BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+20|BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB6BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+21|BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB6BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+22|BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB6BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+23|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+24|FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
