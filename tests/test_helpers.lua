@@ -26,6 +26,12 @@ local function expect_groups(extmark_opts, groups)
   expect.equality(helpers.highlight_groups(child), groups)
 end
 
+T["boot"] = MiniTest.new_set()
+
+T["boot"]["pins TabLineSel to the 0.12 default"] = function()
+  expect.equality(child.api.nvim_get_hl(0, { name = "TabLineSel", link = false }), { bold = true })
+end
+
 T["highlight_groups"] = MiniTest.new_set()
 
 T["highlight_lines"] = MiniTest.new_set()

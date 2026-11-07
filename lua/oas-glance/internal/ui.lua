@@ -628,7 +628,7 @@ local function open_curl(session)
     vim.api.nvim_set_option_value("statusline", " oas-glance curl", { win = win, scope = "local" })
     -- Screen lines, so a wrapped line does not push the last one out of view.
     local screen_lines = vim.api.nvim_win_text_height(win, {}).all
-    vim.api.nvim_win_set_height(win, math.min(math.max(screen_lines, CURL_MIN_HEIGHT), CURL_MAX_HEIGHT))
+    vim.api.nvim_win_set_config(win, { height = math.min(math.max(screen_lines, CURL_MIN_HEIGHT), CURL_MAX_HEIGHT) })
   end
   vim.api.nvim_win_set_cursor(win, { 1, 0 })
   -- Generating the body may have opened refs, and found some broken.
@@ -879,7 +879,7 @@ local function open_windows(session)
       { wrap = true, linebreak = true, breakindent = true, statusline = " oas-glance detail" }
     )
   )
-  vim.api.nvim_win_set_width(session.list_win, session.config.list_width)
+  vim.api.nvim_win_set_config(session.list_win, { width = session.config.list_width })
 end
 
 --- Reads the document, or reports the fatal message and returns nil.
